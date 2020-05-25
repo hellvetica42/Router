@@ -7,5 +7,7 @@ if [[ $PING =~ "$KEY" ]]
 then
 	bash login.sh
 	bash sendSMS.sh
-	echo "SMS sent"
+	echo "SMS sent on $(date)"
+else
+	echo "Connection verified on $(date)"
 fi
